@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "${workspaceFolder}/betaenv/bin/python"
+    "python.pythonPath": "${workspaceFolder}/betaenv/bin/python",
+    "git.ignoreLimitWarning": true
 }
