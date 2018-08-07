@@ -4,8 +4,10 @@ from django.shortcuts import render
 
 
 from django.contrib.auth.models import User, Group
+from pbeta.quickstart.models import Trip, Forecast
 from rest_framework import viewsets
-from pbeta.quickstart.serializers import UserSerializer, GroupSerializer
+from pbeta.quickstart.serializers import UserSerializer, GroupSerializer, TripSerializer, ForecastSerializer
+
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -22,3 +24,13 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+class TripViewSet(viewsets.ModelViewSet):
+
+    queryset = Trip.objects.all()
+    serializer_class = TripSerializer
+
+class ForecastSerializer(viewsets.ModelViewSet):
+
+    queryset = Forecast.objects.all()
+    serializer_class = ForecastSerializer
