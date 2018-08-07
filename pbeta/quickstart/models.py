@@ -16,6 +16,8 @@ class Trip(Model):
     name = CharField(max_length=255)
     distance = DecimalField(max_digits=9, decimal_places=2)
     duration = DurationField()
+    latitude = DecimalField(max_digits=7, decimal_places=4)
+    longitude = DecimalField(max_digits=7, decimal_places=4)
     forecast_url = URLField(max_length=200)
     forecast = Forecast()
 

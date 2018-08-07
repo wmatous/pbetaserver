@@ -24,4 +24,4 @@ class ForecastSerializer(serializers.HyperlinkedModelSerializer):
 class TripSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Trip
-        fields = ('id', 'name', 'duration','distance', 'forecast_url', 'forecast')
+        fields = ('id', 'latitude', 'longitude', 'name', 'duration','distance', 'forecast_url', 'forecast')
