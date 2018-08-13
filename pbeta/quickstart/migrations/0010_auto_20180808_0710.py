@@ -10,6 +10,7 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+
         migrations.AlterField(
             model_name='forecast',
             name='one_day',

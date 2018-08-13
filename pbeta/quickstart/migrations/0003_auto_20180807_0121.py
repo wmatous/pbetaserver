@@ -10,20 +10,24 @@ class Migration(migrations.Migration):
         ('quickstart', '0002_auto_20180807_0108'),
     ]
 
+
+
     operations = [
+        migrations.RunSQL(
+
+
+        ),
         migrations.AddField(
             model_name='trip',
             name='forecasts',
             field=models.ManyToManyField(to='quickstart.Forecast'),
         ),
-        migrations.AlterField(
+        migrations.RemoveField(
             model_name='forecast',
             name='id',
-            field=models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False),
-        ),
-        migrations.AlterField(
+            ),
+        migrations.RemoveField(
             model_name='trip',
             name='id',
-            field=models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False),
-        ),
+            ),
     ]

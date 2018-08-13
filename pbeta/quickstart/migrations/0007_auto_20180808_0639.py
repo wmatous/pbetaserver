@@ -11,10 +11,6 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RemoveField(
-            model_name='forecast',
-            name='id',
-        ),
-        migrations.RemoveField(
             model_name='trip',
             name='forecast_url',
         ),
