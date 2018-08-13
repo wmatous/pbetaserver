@@ -13,10 +13,6 @@ class Migration(migrations.Migration):
 
 
     operations = [
-        migrations.RunSQL(
-
-
-        ),
         migrations.AddField(
             model_name='trip',
             name='forecasts',
