@@ -8,6 +8,8 @@ from pbeta.quickstart.models import Trip, Forecast
 from rest_framework import viewsets
 from pbeta.quickstart.serializers import UserSerializer, GroupSerializer, TripSerializer, ForecastSerializer
 
+def home(request):
+	return render(request, 'home.html')
 
 
 class UserViewSet(viewsets.ModelViewSet):
